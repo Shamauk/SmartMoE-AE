@@ -1,0 +1,5 @@
+torch==1.10.0+cu113
+CUDA
+NCCL>=2.9.9
+apex 
+deepspeed==0.6.1

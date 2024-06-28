@@ -92,7 +92,8 @@ def draw(fig, ax, names, speedup, num_scale, num_gate):
                 else:
                     cap = "$+\infty$"
             labels.append(f"{device}/{cap}")
-    ax.set_xticks(x, labels)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
     ax.set_yticks([0,1,2,3])
     ax.set_xlim([-0.6,11.85])
     ax.set_ylim([0,3])
@@ -100,7 +101,7 @@ def draw(fig, ax, names, speedup, num_scale, num_gate):
     plt.axvline(7.625,linestyle='-', color='black')
     plt.text(9.15 + width , 3.2, 'on pinky')
     plt.text(3, 3.2, 'on inky', fontsize=12)
-    plt.legend(loc='upper left', ncols=4)
+    plt.legend(loc='upper left', ncol=4)
     plt.savefig(f'{output_dir}/fig8.pdf', bbox_inches='tight')
 
 

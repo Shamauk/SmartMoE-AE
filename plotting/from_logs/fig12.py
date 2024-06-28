@@ -51,7 +51,7 @@ def draw_layer(fig, ax, names, speedup, num_layer):
     ax.set_yticks([0,0.5,1,1.5,2])
     ax.set_ylabel('Speedup')
     ax.set_xlabel('# layers')
-    ax.legend(loc='upper right',ncols=2)
+    ax.legend(loc='upper right',ncol=2)
 
 fig, ax = plt.subplots(1,1)
 

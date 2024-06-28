@@ -66,11 +66,12 @@ def draw(fig, ax, names, speedup, num_scale, num_gate):
                 cap = f"{1.2*(2**gate):.1f}"
             labels.append(f"{device}/{cap}")
     
-    ax.set_xticks(x, labels)
+    ax.set_xticks(x)
+    ax.set_xticklabels(labels)
     ax.set_ylim([0,3])
     ax.set_xticks([0,1,2,3])
     ax.set_ylabel('Speedup')
-    plt.legend(loc='upper left',ncols=3)
+    plt.legend(loc='upper left',ncol=3)
     plt.savefig(f'{output_dir}/fig10.pdf',bbox_inches='tight')
 
 

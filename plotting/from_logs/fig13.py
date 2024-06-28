@@ -67,5 +67,5 @@ def draw(fig, axs, nnodes, mbs, lat, layer_idx):
 
 fig, axes = plt.subplots(1,1)
 draw(fig, axes, 1, 8, 0, 1)
-plt.legend(loc='upper left', ncols=4, bbox_to_anchor=(-0.01,1.2))
+plt.legend(loc='upper left', ncol=4, bbox_to_anchor=(-0.01,1.2))
 plt.savefig(f'{output_dir}/fig13.pdf', bbox_inches='tight')
